@@ -25,7 +25,7 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 -->
 
 ---
-### Coba Endpoint lewat 👇 👇 👇 
+### Coba Endpoint Lewat 👇 👇 👇 
 
 [File Insomnia](https://github.com/mhnaufal/pbp-rest-api/blob/main/test-api-insomnia.json)
 
