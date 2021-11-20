@@ -69,8 +69,8 @@ module.exports.models = {
   ***************************************************************************/
 
   attributes: {
-    createdAt: { type: 'number', autoCreatedAt: true, columnName: 'tgl_insert'},
-    updatedAt: { type: 'number', autoUpdatedAt: true, columnName: 'tgl_update'},
+    tgl_insert: { type: 'number', autoCreatedAt: true, columnName: 'tgl_insert'},
+    tgl_update: { type: 'number', autoUpdatedAt: true, columnName: 'tgl_update'},
     id: { type: 'number', autoIncrement: true, },
     //--------------------------------------------------------------------------
     //  /\   Using MongoDB?
