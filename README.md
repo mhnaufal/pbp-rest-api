@@ -2,33 +2,36 @@
 
 a [Sails v1](https://sailsjs.com) application
 
-
-### Links
-
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
-
-
 ### Version info
 
 This app was originally generated on Fri Nov 19 2021 23:25:20 GMT+0700 (Western Indonesia Time) using Sails v1.5.0.
 
-<!-- Internally, Sails used [`sails-generate@2.0.3`](https://github.com/balderdashy/sails-generate/tree/v2.0.3/lib/core-generators/new). -->
+## Fitur webservice yang dibuat
+1. Tambah anggota
+    ```javascript
+    POST    localhost:1337/anggota
+    ```
 
+2. Cari buku berdasarkan XXX
+    ```javascript
+    GET     localhost:1337/buku?where={"judul":"Pemrograman Berbasis Platform"}
+    ```
+    
+    ```javascript
+    GET     localhost:1337/buku?pengarang=anonim
+    ```
+    
+    ```javascript
+    GET     localhost:1337/buku?stok=13
+    ```
 
+Nyoba2 webservicenya pake Insomnia, [download di sini](https://insomnia.rest/download)
 
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
-[File Insomnia](#)
+Terus import file ini ke Insomnia [File Insomnia](https://github.com/mhnaufal/pbp-rest-api/blob/main/test-api-insomnia.json)
 
 ## Build Guide/Panduan Pemasangan
 ### Unix
-1. Lakukan cloning (dari branch master)
+1. Lakukan cloning (dari branch main)
     ```bash
     git clone https://github.com/mhnaufal/pbp-rest-api.git
     ```
@@ -39,7 +42,9 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 3. Copy & paste file **.env.example** dan beri nama **.env**
 
 4. Sesuaiakan isi file .env dengan server & basis data lokal
-    > untuk DBMS MySql, pengaturan dapat dilakukan di file ``datastore.js`` atau langsung di file `.env`
+    > untuk DBMS MySql, pengaturan dapat dilakukan di file [``datastore.js``](https://github.com/mhnaufal/pbp-rest-api/blob/main/config/datastores.js) atau langsung di file `.env`
+
+    > "mysql://root:@localhost:3306/siperpus-api"
 
 5. Jalankan
     ```properties
@@ -51,7 +56,7 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
     ```
 
 ### Windows
-1. Lakukan cloning (dari branch master)
+1. Lakukan cloning (dari branch main)
     ```bash
     git clone https://github.com/mhnaufal/pbp-rest-api.git
     ```
@@ -62,9 +67,11 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 3. Copy & paste file **.env.example** dan beri nama **.env**
 
 4. Sesuaiakan isi file .env dengan server & basis data lokal
-    > untuk DBMS MySql, pengaturan dapat dilakukan di file ``datastore.js`` atau langsung di file `.env`
+    > untuk DBMS MySql, pengaturan dapat dilakukan di file [``datastore.js``](https://github.com/mhnaufal/pbp-rest-api/blob/main/config/datastores.js) atau langsung di file `.env`
 
-5. Jalankan dengan menggunakan **bash** atau **cmd** (jangan powershell!)
+    > "mysql://root:@localhost:3306/siperpus-api"
+
+5. Jalankan dengan menggunakan **bash**, kalo belum punya [download git dulu](https://git-scm.com/downloads) (jangan powershell!)
     ```properties
     npm run dev-windows
     ```
