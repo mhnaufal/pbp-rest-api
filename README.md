@@ -6,24 +6,6 @@ a [Sails v1](https://sailsjs.com) application
 
 This app was originally generated on Fri Nov 19 2021 23:25:20 GMT+0700 (Western Indonesia Time) using Sails v1.5.0.
 
-## Fitur webservice yang dibuat
-1. Tambah anggota
-    ```javascript
-    POST    localhost:1337/anggota
-    ```
-
-2. Cari buku berdasarkan XXX
-    ```javascript
-    GET     localhost:1337/buku?where={"judul":"Pemrograman Berbasis Platform"}
-    ```
-    
-    ```javascript
-    GET     localhost:1337/buku?pengarang=anonim
-    ```
-    
-    ```javascript
-    GET     localhost:1337/buku?stok=13
-    ```
 
 Nyoba2 webservicenya pake Insomnia, [download di sini](https://insomnia.rest/download)
 
